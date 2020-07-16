@@ -1,0 +1,51 @@
+{
+  "name": "typescript-express-graphql-starter",
+  "version": "1.0.0",
+  "description": "Node TypeScript Express GraphQL Starter",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon --exec ts-node src/index.ts development",
+    "build": "tsc -p .",
+    "start": "node dist/index.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoghmadan/TypeScript-Express-GraphQL-Starter.git"
+  },
+  "keywords": [
+    "Node",
+    "TypeScript",
+    "Express",
+    "GraphQL",
+    "MongoDB",
+    "Starter"
+  ],
+  "author": "Amogh Madan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amoghmadan/TypeScript-Express-GraphQL-Starter/issues"
+  },
+  "homepage": "https://github.com/amoghmadan/TypeScript-Express-GraphQL-Starter#readme",
+  "devDependencies": {
+    "@types/async": "^3.2.3",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.7",
+    "@types/helmet": "0.0.47",
+    "@types/mongoose": "^5.7.32",
+    "@types/morgan": "^1.9.1",
+    "@types/node": "^14.0.23",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "helmet": "^3.23.3",
+    "mongoose": "^5.9.24",
+    "morgan": "^1.10.0"
+  }
+}
