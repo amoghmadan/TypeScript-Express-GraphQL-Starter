@@ -1,7 +1,7 @@
 import { PersonModel } from '../../models/person';
 import { Person } from '../../interfaces/person';
 
-const query = {
+const query: any = {
     hello: async (): Promise<string> => {
         return 'World!';
     },

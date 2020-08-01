@@ -1,7 +1,7 @@
 import { PersonModel } from '../../models/person';
 import { Person } from '../../interfaces/person';
 
-const mutations = {
+const mutations: any = {
     createPerson: async (args: Person): Promise<Person | null> => {
         let newPerson: Person = new PersonModel(args);
         return await newPerson.save();
