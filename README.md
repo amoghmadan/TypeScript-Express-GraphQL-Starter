@@ -10,23 +10,29 @@ Kick-starter to your GraphQL application.
     Production: npm start
 
 ## Project Structure
-    - src
-        - index.ts
-        - App.ts
-        - interfaces
-            - person.ts
-        -models
-            - person.ts
-        - schema
-            - index.ts
-            - typeDefs.ts
-            - resolvers
-                - index.ts
-                - queries.ts
-                - mutations.ts
-    - resources
-        - development.json
-        - prodcution.json
+    .
+    ├── LICENSE
+    ├── package.json
+    ├── package-lock.json
+    ├── README.md
+    ├── resources
+    │   ├── development.json
+    │   └── production.json
+    ├── src
+    │   ├── App.ts
+    │   ├── index.ts
+    │   ├── interfaces
+    │   │   └── person.ts
+    │   ├── models
+    │   │   └── person.ts
+    │   └── schema
+    │       ├── index.ts
+    │       ├── resolvers
+    │       │   ├── index.ts
+    │       │   ├── mutations.ts
+    │       │   └── queries.ts
+    │       └── typeDefs.ts
+    └── tsconfig.json
 
 ## Deploy
     npm i -g pm2
