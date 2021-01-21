@@ -1,6 +1,6 @@
 {
     "env": {
-        "es2020": true,
+        "es2021": true,
         "node": true
     },
     "extends": [
@@ -9,7 +9,7 @@
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 11,
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [

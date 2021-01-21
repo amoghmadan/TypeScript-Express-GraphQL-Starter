@@ -1,4 +1,4 @@
-import { buildSchema, GraphQLSchema } from 'graphql';
+import { buildSchema, GraphQLSchema } from "graphql";
 
 const typeDefs: GraphQLSchema = buildSchema(`
     type Person {

@@ -1,9 +1,9 @@
-import { PersonModel } from '../../models/person';
-import { Person } from '../../interfaces/person';
+import { PersonModel } from "../../models";
+import { Person } from "../../interfaces/models";
 
 const mutations: any = {
     createPerson: async (args: Person): Promise<Person | null> => {
-        let newPerson: Person = new PersonModel(args);
+        const newPerson: Person = new PersonModel(args);
         return await newPerson.save();
     },
     updatePerson: async (args: any): Promise<Person | null> => {

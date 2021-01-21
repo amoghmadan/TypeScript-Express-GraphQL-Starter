@@ -1,9 +1,9 @@
-import { PersonModel } from '../../models/person';
-import { Person } from '../../interfaces/person';
+import { PersonModel } from "../../models";
+import { Person } from "../../interfaces/models";
 
 const query: any = {
     hello: async (): Promise<string> => {
-        return 'World!';
+        return "World!";
     },
     people: async (): Promise<Person[]> => {
         return await PersonModel.find();

@@ -16,22 +16,27 @@ Kick-starter to your GraphQL application.
     ├── package-lock.json
     ├── README.md
     ├── resources
-    │   ├── development.json
-    │   └── production.json
+    │   ├── development.json
+    │   └── production.json
     ├── src
-    │   ├── App.ts
-    │   ├── index.ts
-    │   ├── interfaces
-    │   │   └── person.ts
-    │   ├── models
-    │   │   └── person.ts
-    │   └── schema
-    │       ├── index.ts
-    │       ├── resolvers
-    │       │   ├── index.ts
-    │       │   ├── mutations.ts
-    │       │   └── queries.ts
-    │       └── typeDefs.ts
+    │   ├── App.ts
+    │   ├── index.ts
+    │   ├── interfaces
+    │   │   ├── config.interface.ts
+    │   │   ├── index.ts
+    │   │   └── models
+    │   │       ├── index.ts
+    │   │       └── person.interface.ts
+    │   ├── models
+    │   │   ├── index.ts
+    │   │   └── person.model.ts
+    │   └── schema
+    │       ├── index.ts
+    │       ├── resolvers
+    │       │   ├── index.ts
+    │       │   ├── mutations.ts
+    │       │   └── queries.ts
+    │       └── typeDefs.ts
     └── tsconfig.json
 
 ## Deploy
