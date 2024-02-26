@@ -1,0 +1,4 @@
+{
+  "exec": "ts-node -r tsconfig-paths/register",
+  "watch": [".babelrc", ".env", "src/**/*.ts"]
+}
