@@ -33,7 +33,7 @@ export function getRequestListener(): Application {
  */
 export default async function bootstrap(
   port: number,
-  host: string
+  host: string,
 ): Promise<void> {
   const options: ServerOptions = {};
   const requestListener: Application = getRequestListener();

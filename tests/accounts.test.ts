@@ -98,7 +98,7 @@ describe('Account API Tests', (): void => {
         .send({ query: 'query {user {email}}' })
         .set('Authorization', `${KEYWORD} ${user.token.key}`);
       expect(response.status).toBe(200);
-      expect(response.body.email).toBe(user.email);
+      expect(response.body.data.user.email).toBe(user.email);
     });
 
     it('Performs Account Logout', async (): Promise<void> => {

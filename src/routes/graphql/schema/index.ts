@@ -1,20 +1,18 @@
 import express from 'express';
-import { Request, createHandler } from 'graphql-http';
+import { Request } from 'graphql-http';
+import { createHandler } from 'graphql-http/lib/use/express';
 
 import resolvers from './resolvers';
 import typeDefs from './typeDefs';
-import { User } from '@/interfaces/user';
-
-interface ERequest extends express.Request {
-  user: User;
-}
 
 export default createHandler({
   schema: typeDefs,
   rootValue: resolvers,
-  context: (
-    req: Request<ERequest, Record<string, unknown>>
-  ): Record<string, unknown> => {
-    return { user: req.user };
+  context: (req: Request<express.Request, any>): Record<string, unknown> => {
+    const { user } = req.raw;
+    if (!user) {
+      return {};
+    }
+    return { user };
   },
 });
